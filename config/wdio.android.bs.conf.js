@@ -16,8 +16,8 @@ config.specs = [
 config.capabilities = [
   {
     platformName: "Android",
-    "appium:platformVersion": "9.0",
-    "appium:deviceName": "Samsung Galaxy S10",
+    "appium:platformVersion": "10.0",
+    "appium:deviceName": "Samsung Galaxy S20 Ultra",
     "appium:automationName": "UIAutomator2",
     "appium:app": "bs://c21be75a695b047d270a866affd0cf6f6f0eab57",
   }

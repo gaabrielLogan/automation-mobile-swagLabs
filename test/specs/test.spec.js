@@ -27,12 +27,15 @@ describe('Product and checkout', () => {
         await addRemoveItemPage.addToCart();
 
         await addRemoveItemPage.goToCart();
+        await browser.pause(1000);
 
         const isItemDisplayed = await addRemoveItemPage.isItemDisplayed();
         expect(isItemDisplayed).toBeTruthy();
 
         await addRemoveItemPage.removeItem();
+        await browser.pause(1000);
 
         await addRemoveItemPage.expectItemNotToExist();
+
     });
 });
