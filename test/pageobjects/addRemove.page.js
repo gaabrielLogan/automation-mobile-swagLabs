@@ -22,7 +22,7 @@ class AddRemoveItemPage {
     }
 
     async expectItemNotToExist() {
-        await expect($('~test-Item')).toBeNull();
+        await expect($('~test-REMOVE')).not.toExist();
     }
 }
 
