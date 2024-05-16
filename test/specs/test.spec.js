@@ -38,6 +38,6 @@ describe('Product and checkout', () => {
         await addRemoveItemPage.expectItemNotToExist();
         await browser.pause(1000);
         
-        await driver.deleteSession();
+
     });
 });
