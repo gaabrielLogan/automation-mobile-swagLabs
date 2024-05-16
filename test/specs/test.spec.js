@@ -34,5 +34,7 @@ describe('Product and checkout', () => {
         await addRemoveItemPage.removeItem();
 
         await addRemoveItemPage.expectItemNotToExist();
+
+        await driver.deleteSession();
     });
 });
